@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food_joa_rank_bxslider</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <style>
+	    *{margin: 0; padding: 0;}
+
+	    .rank{
+		    margin: 0 auto;
+		    width: 300px;  
+	    }
+
+    </style>
+    <script>
+	    $(function() {
+		    $('.rank_slider').bxSlider({
+				auto: true,
+				pager:true
+		    });
+
+		    $('.market_slider').bxSlider({
+				auto: true,
+				pager:true
+		    });
+	    });
+
+    </script>
+</head>
+<body>
+    <div class="rank">
+	<ul class="rank_slider">
+	    <li><img src="image/foodrank1.jpg" alt="레시피랭킹1" height="auto"></li>
+	    <li><img src="image/foodrank2.jpg" alt="레시피랭킹2" height="auto"></li>
+	    <li><img src="image/foodrank3.jpg" alt="레시피랭킹3" height="auto"></li>
+	</ul>
+    </div>
+    <div class="rank">
+	<ul class="market_slider">
+	    <li><img src="image/foodrank1.jpg" alt="마켓랭킹1" width="300px" height="auto"></li>
+	    <li><img src="image/foodrank2.jpg" alt="마켓랭킹2" width="300px" height="auto"></li>
+	    <li><img src="image/foodrank3.jpg" alt="마켓랭킹3" width="300px" height="auto"></li>
+	</ul>
+    </div>
+</body>
+</html>
